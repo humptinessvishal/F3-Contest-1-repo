@@ -15,7 +15,7 @@ form.addEventListener("submit", (event) => {
 async function movieList(api, movie) {
     container.innerHTML = "";
     loader.classList.remove("hide");
-    const url = `http://www.omdbapi.com/?i=tt3896198&apikey=${api}&s=${movie}`;
+    const url = `https://www.omdbapi.com/?i=tt3896198&apikey=${api}&s=${movie}`;
     try {
         const response = await fetch(url);
         const movieDetail = await response.json();
